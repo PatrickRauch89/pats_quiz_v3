@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="infos.db" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="1"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="1048"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><table title="python" custom_title="0" dock_id="1" table="4,6:mainpython"/><dock_state state="000000ff00000000fd00000001000000020000033d000002fafc0100000001fb000000160064006f0063006b00420072006f007700730065003101000000000000033d0000011f00ffffff000002a00000000000000004000000040000000800000008fc00000000"/><default_encoding codec=""/><browse_table_settings><table schema="main" name="base" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_" freeze_columns="0"><sort/><column_widths><column index="1" value="39"/><column index="2" value="155"/><column index="3" value="300"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="english_hardware" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_" freeze_columns="0"><sort/><column_widths><column index="1" value="39"/><column index="2" value="143"/><column index="3" value="300"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="english_voc" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_" freeze_columns="0"><sort/><column_widths><column index="1" value="39"/><column index="2" value="157"/><column index="3" value="208"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="python" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_" freeze_columns="0"><sort/><column_widths><column index="1" value="76"/><column index="2" value="151"/><column index="3" value="328"/><column index="4" value="141"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table></browse_table_settings></tab_browse><tab_sql><sql name="SQL 1*">INSERT INTO python (id, term, definition, beginner_explanation)
+VALUES (0, 'String', 'Ein String ist eine Folge von Zeichen (Buchstaben, Ziffern, Sonderzeichen).', 'Ein String ist eine Abfolge von Zeichen, die du in Anführungszeichen setzt. Das können Buchstaben, Zahlen oder Sonderzeichen sein. Zum Beispiel: ''Hallo, Welt!'' ist ein String.');
+
+INSERT INTO python (id, term, definition, beginner_explanation)
+VALUES (1, 'Print-Funktion', 'Mit der print()-Funktion wird Text (oder andere Werte) auf dem Bildschirm ausgegeben.', 'Die print()-Funktion zeigt Text auf dem Bildschirm an. Du kannst damit auch Variablen oder Ergebnisse von Berechnungen anzeigen. Zum Beispiel: print(''Hallo, Welt!'') zeigt den Text ''Hallo, Welt!'' auf dem Bildschirm an.');
+
+INSERT INTO python (id, term, definition, beginner_explanation)
+VALUES (2, 'Ganzzahlen', 'Zahlen ohne Dezimalstellen.', 'Ganzzahlen sind Zahlen, die keine Nachkommastellen haben, wie 1, 2, 3 oder -5. Sie werden in Python als ''int'' bezeichnet.');
+
+INSERT INTO python (id, term, definition, beginner_explanation)
+VALUES (3, 'Gleitkommazahlen', 'Zahlen mit Dezimalstellen.', 'Gleitkommazahlen sind Zahlen, die Nachkommastellen haben, wie 3.14 oder -0.5. Sie werden in Python als ''float'' bezeichnet.');
+
+INSERT INTO python (id, term, definition, beginner_explanation)
+VALUES (4, 'Type Casting', 'Umwandlung von Werten von einem Typ in einen anderen.', 'Type Casting bedeutet, dass du einen Wert von einem Datentyp in einen anderen umwandelst. Zum Beispiel kannst du einen String in eine Ganzzahl umwandeln, wenn der String nur Zahlen enthält.');
+
+INSERT INTO python (id, term, definition, beginner_explanation)
+VALUES (5, 'Eingabe von Benutzerdaten', 'Mit der input()-Funktion kannst du Daten vom Benutzer einlesen.', 'Die input()-Funktion ermöglicht es dir, Daten vom Benutzer zu erhalten, während das Programm läuft. Zum Beispiel: name = input(''Bitte gib deinen Namen ein: '') fragt den Benutzer nach seinem Namen.');
+
+INSERT INTO python (id, term, definition, beginner_explanation)
+VALUES (6, 'Boolesche Werte', 'Der Datentyp bool wird verwendet, um Wahrheitswerte darzustellen (True oder False).', 'Boolesche Werte sind entweder ''True'' oder ''False''. Sie werden verwendet, um Bedingungen in deinem Code zu überprüfen. Zum Beispiel: if 5 &gt; 3: print(''True'')');
+
+INSERT INTO python (id, term, definition, beginner_explanation)
+VALUES (7, 'None', 'Steht für ''kein Wert'' oder ''Abwesenheit eines Wertes''. Wird z.B. zurückgegeben, wenn eine Funktion nichts explizit zurückgibt.', '''None'' ist ein spezieller Wert in Python, der ''kein Wert'' bedeutet. Er wird oft verwendet, um zu zeigen, dass eine Variable keinen Wert hat oder eine Funktion keinen Rückgabewert liefert.');
+
+INSERT INTO python (id, term, definition, beginner_explanation)
+VALUES (8, 'Einfache oder doppelte Anführungszeichen', 'Zur Definition eines Strings.', 'Du kannst Strings in Python entweder mit einfachen Anführungszeichen ('''') oder doppelten Anführungszeichen (&quot;&quot;) definieren. Beispiel: ''Hallo'' oder &quot;Hallo&quot;.');
+
+INSERT INTO python (id, term, definition, beginner_explanation)
+VALUES (9, 'Dreifache Anführungszeichen', 'Besonders nützlich für mehrzeilige Strings, da alle Zeilenumbrüche erhalten bleiben.', 'Dreifache Anführungszeichen ('''' oder &quot;&quot;&quot;) werden verwendet, um Strings zu definieren, die sich über mehrere Zeilen erstrecken. Sie behalten alle Zeilenumbrüche bei.');
+
+INSERT INTO python (id, term, definition, beginner_explanation)
+VALUES (10, 'Zeilenumbruch', 'Mit \n kann ein Zeilenumbruch eingefügt werden.', 'Der Zeilenumbruch \n wird verwendet, um in einem String eine neue Zeile zu beginnen. Beispiel: ''Hallo\nWelt'' wird als ''Hallo'' in der ersten Zeile und ''Welt'' in der zweiten Zeile angezeigt.');
+
+INSERT INTO python (id, term, definition, beginner_explanation)
+VALUES (11, 'Tabulator', 'Mit \t kann ein Tab (Einrückung) eingefügt werden.', 'Der Tabulator \t wird verwendet, um in einem String eine Einrückung zu erzeugen. Beispiel: ''Hallo\tWelt'' erzeugt einen Abstand zwischen ''Hallo'' und ''Welt''.');
+
+INSERT INTO python (id, term, definition, beginner_explanation)
+VALUES (12, 'String Slicing', 'Extrahiert einen Teil eines Strings ohne den Originalstring zu verändern.', 'String Slicing ermöglicht es dir, einen Teil eines Strings zu extrahieren, ohne den ursprünglichen String zu ändern. Du kannst dazu die Syntax string[start:ende] verwenden.');
+
+INSERT INTO python (id, term, definition, beginner_explanation)
+VALUES (13, 'Operatoren ''in'' und ''not in''', 'Überprüfen, ob ein Teilstring in einem anderen String enthalten ist.', 'Die Operatoren ''in'' und ''not in'' werden verwendet, um zu überprüfen, ob ein bestimmter Teilstring in einem anderen String vorhanden ist. Beispiel: ''Hallo'' in ''Hallo Welt'' gibt True zurück.');
+
+INSERT INTO python (id, term, definition, beginner_explanation)
+VALUES (14, 'islower()', 'Prüft, ob alle Buchstaben klein geschrieben sind.', 'Die Methode islower() prüft, ob alle Buchstaben in einem String klein geschrieben sind. Beispiel: ''hallo''.islower() gibt True zurück.');
+
+INSERT INTO python (id, term, definition, beginner_explanation)
+VALUES (15, 'isupper()', 'Prüft, ob alle Buchstaben groß geschrieben sind.', 'Die Methode isupper() prüft, ob alle Buchstaben in einem String groß geschrieben sind. Beispiel: ''HALLO''.isupper() gibt True zurück.');
+
+INSERT INTO python (id, term, definition, beginner_explanation)
+VALUES (16, 'lower()', 'Wandelt alle Buchstaben in Kleinbuchstaben um.', 'Die Methode lower() wandelt alle Buchstaben in einem String in Kleinbuchstaben um. Beispiel: ''HALLO''.lower() ergibt ''hallo''.');
+
+INSERT INTO python (id, term, definition, beginner_explanation)
+VALUES (17, 'upper()', 'Wandelt alle Buchstaben in Großbuchstaben um.', 'Die Methode upper() wandelt alle Buchstaben in einem String in Großbuchstaben um. Beispiel: ''hallo''.upper() ergibt ''HALLO''.');
+
+INSERT INTO python (id, term, definition, beginner_explanation)
+VALUES (18, 'isalpha()', 'Prüft, ob der String ausschließlich aus Buchstaben besteht.', 'Die Methode isalpha() prüft, ob ein String nur Buchstaben enthält. Beispiel: ''Hallo''.isalpha() gibt True zurück.');
+
+INSERT INTO python (id, term, definition, beginner_explanation)
+VALUES (19, 'isalnum()', 'Prüft, ob der String nur aus Buchstaben und Zahlen besteht.', 'Die Methode isalnum() prüft, ob ein String nur Buchstaben und Zahlen enthält. Beispiel: ''Hallo123''.isalnum() gibt True zurück.');
+
+INSERT INTO python (id, term, definition, beginner_explanation)
+VALUES (20, 'isdecimal()', 'Prüft, ob der String ausschließlich aus Ziffern besteht.', 'Die Methode isdecimal() prüft, ob ein String nur Zahlen enthält. Beispiel: ''123''.isdecimal() gibt True zurück.');
+
+INSERT INTO python (id, term, definition, beginner_explanation)
+VALUES (21, 'split()', 'Teilt einen String an einem bestimmten Trennzeichen.', 'Die Methode split() teilt einen String an einem bestimmten Trennzeichen in eine Liste von Teilstrings. Beispiel: ''Hallo Welt''.split('' '') ergibt [''Hallo'', ''Welt''].');
+
+INSERT INTO python (id, term, definition, beginner_explanation)
+VALUES (22, 'join()', 'Fügt die Elemente einer Liste zu einem einzigen String zusammen.', 'Die Methode join() fügt die Elemente einer Liste zu einem einzigen String zusammen, wobei ein bestimmtes Trennzeichen verwendet wird. Beispiel: '', ''.join([''Hallo'', ''Welt'']) ergibt ''Hallo, Welt''.');
+
+INSERT INTO python (id, term, definition, beginner_explanation)
+VALUES (23, 'strip()', 'Entfernt Leerzeichen vom Anfang und Ende eines Strings.', 'Die Methode strip() entfernt Leerzeichen am Anfang und Ende eines Strings. Beispiel: '' Hallo ''.strip() ergibt ''Hallo''.');
+
+INSERT INTO python (id, term, definition, beginner_explanation)
+VALUES (24, 'lstrip()', 'Entfernt Leerzeichen nur vom Anfang eines Strings.', 'Die Methode lstrip() entfernt Leerzeichen nur am Anfang eines Strings. Beispiel: '' Hallo''.lstrip() ergibt ''Hallo''.');
+
+INSERT INTO python (id, term, definition, beginner_explanation)
+VALUES (25, 'rstrip()', 'Entfernt Leerzeichen nur vom Ende eines Strings.', 'Die Methode rstrip() entfernt Leerzeichen nur am Ende eines Strings. Beispiel: ''Hallo ''.rstrip() ergibt ''Hallo''.');
+
+INSERT INTO python (id, term, definition, beginner_explanation)
+VALUES (26, 'startswith()', 'Überprüft, ob ein String mit einem bestimmten Teilstring beginnt.', 'Die Methode startswith() prüft, ob ein String mit einem bestimmten Teilstring beginnt. Beispiel: ''Hallo Welt''.startswith(''Hallo'') gibt True zurück.');
+
+INSERT INTO python (id, term, definition, beginner_explanation)
+VALUES (27, 'endswith()', 'Überprüft, ob ein String mit einem bestimmten Teilstring endet.', 'Die Methode endswith() prüft, ob ein String mit einem bestimmten Teilstring endet. Beispiel: ''Hallo Welt''.endswith(''Welt'') gibt True zurück.');
+
+INSERT INTO python (id, term, definition, beginner_explanation)
+VALUES (28, 'Unäre Operatoren', 'Arbeiten mit nur einem Operanden (z.B. x).', 'Unäre Operatoren führen eine Operation mit nur einem Wert durch. Beispiel: Das negative Vorzeichen in -5.');
+
+INSERT INTO python (id, term, definition, beginner_explanation)
+VALUES (29, 'Binäre Operatoren', 'Arbeiten mit zwei Operanden (z.B. x + y).', 'Binäre Operatoren führen eine Operation mit zwei Werten durch. Beispiel: Die Addition in 2 + 3.');
+
+INSERT INTO python (id, term, definition, beginner_explanation)
+VALUES (30, 'Ternäre Operatoren', 'Arbeiten mit drei Operanden (z.B. A if Bedingung else B).', 'Ternäre Operatoren führen eine Operation mit drei Werten durch. Beispiel: ''Erwachsen'' if alter &gt;= 18 else ''Minderjährig''.');
+
+INSERT INTO python (id, term, definition, beginner_explanation)
+VALUES (31, 'Arithmetische Operatoren', 'Führen mathematische Berechnungen durch.', 'Arithmetische Operatoren werden für grundlegende mathematische Operationen verwendet, wie Addition (+), Subtraktion (-), Multiplikation (*) und Division (/).');
+
+INSERT INTO python (id, term, definition, beginner_explanation)
+VALUES (32, 'Vergleichsoperatoren', 'Liefern boolesche Werte (True oder False).', 'Vergleichsoperatoren vergleichen zwei Werte und geben True oder False zurück. Beispiel: 5 &gt; 3 gibt True zurück.');
+
+INSERT INTO python (id, term, definition, beginner_explanation)
+VALUES (33, 'Logische Operatoren', 'Verknüpfen Bedingungen.', 'Logische Operatoren kombinieren Bedingungen. Beispiel: (5 &gt; 3) and (2 &lt; 4) gibt True zurück.');
+
+INSERT INTO python (id, term, definition, beginner_explanation)
+VALUES (34, 'Kombinierte Zuweisungsoperatoren', 'Erlauben es, Zuweisungen und Operationen in einem Schritt zu kombinieren.', 'Kombinierte Zuweisungsoperatoren führen eine Operation und eine Zuweisung in einem Schritt durch. Beispiel: x += 2 ist dasselbe wie x = x + 2.');
+
+INSERT INTO python (id, term, definition, beginner_explanation)
+VALUES (35, 'Bitweise Operatoren', 'Arbeiten auf der Bit-Ebene.', 'Bitweise Operatoren führen Operationen auf der Ebene der einzelnen Bits von Zahlen durch. Sie werden oft in der Systemprogrammierung verwendet.');
+
+INSERT INTO python (id, term, definition, beginner_explanation)
+VALUES (36, 'Faktor', 'Für Anzahl Möglichkeiten. Zu finden in der math library.', 'Ein Faktor ist eine Zahl, die eine andere Zahl genau teilt. Die Fakultät einer Zahl n (n!) ist das Produkt aller positiven ganzen Zahlen von 1 bis n.');
+
+INSERT INTO python (id, term, definition, beginner_explanation)
+VALUES (37, 'Einzeiler-Bedingung', 'Eine Bedingung und Aktion in einer einzigen Zeile.', 'Eine Einzeiler-Bedingung führt eine Aktion basierend auf einer Bedingung in einer einzigen Zeile aus. Beispiel: print(''Erwachsen'') if alter &gt;= 18 else print(''Minderjährig'').');
+
+INSERT INTO python (id, term, definition, beginner_explanation)
+VALUES (38, 'Bedingte Anweisungen', 'Steuern den Programmfluss basierend auf Bedingungen.', 'Bedingte Anweisungen ermöglichen es dir, den Programmfluss basierend auf Bedingungen zu steuern. Beispiel: if alter &gt;= 18: print(''Erwachsen'').');
+
+INSERT INTO python (id, term, definition, beginner_explanation)
+VALUES (39, 'while-Schleife', 'Führt einen Block wiederholt aus, solange die Bedingung wahr ist.', 'Eine while-Schleife führt einen Codeblock so lange aus, wie eine Bedingung wahr ist. Beispiel: while zähler &lt; 5: print(zähler).');
+
+INSERT INTO python (id, term, definition, beginner_explanation)
+VALUES (40, 'for-Schleife', 'Iteriert über eine Sequenz oder dient als Zählerschleife.', 'Eine for-Schleife iteriert über eine Sequenz (wie eine Liste) oder dient als Zählerschleife. Beispiel: for i in range(5): print(i).');
+
+INSERT INTO python (id, term, definition, beginner_explanation)
+VALUES (41, 'Funktionen', 'Zerlegen komplexe Probleme in kleinere, überschaubare Teilaufgaben.', 'Funktionen helfen, den Code übersichtlich zu halten, indem sie komplexe Aufgaben in kleinere Teile aufteilen. Beispiel: def grüßen(): print(''Hallo!'').');
+
+INSERT INTO python (id, term, definition, beginner_explanation)
+VALUES (42, 'Rückgabewerte (return)', 'Gibt einer Funktion einen Wert zurück.', 'Mit return kannst du einen Wert aus einer Funktion zurückgeben. Beispiel: def addieren(a, b): return a + b.');
+
+INSERT INTO python (id, term, definition, beginner_explanation)
+VALUES (43, 'Optionale Parameter', 'Parametern Standardwerte zuweisen, sodass sie optional sind.', 'Optionale Parameter haben Standardwerte, sodass sie nicht immer angegeben werden müssen. Beispiel: def grüßen(name=''Welt''): print(''Hallo, '' + name).');
+
+INSERT INTO python (id, term, definition, beginner_explanation)
+VALUES (44, 'Schlüsselwort-Parameter', 'Parameter benannt übergeben, wodurch die Reihenfolge egal wird.', 'Schlüsselwort-Parameter ermöglichen es dir, die Reihenfolge der Argumente zu ignorieren, indem du den Parameternamen angibst. Beispiel: def grüßen(name, nachricht): print(''Hallo, '' + name + ''! '' + nachricht).');
+
+INSERT INTO python (id, term, definition, beginner_explanation)
+VALUES (45, 'Beliebige Anzahl von Parametern', 'Verwendung des *args-Konstrukts, wenn die Anzahl der Werte unbekannt ist.', 'Mit *args kannst du eine beliebige Anzahl von Argumenten an eine Funktion übergeben. Beispiel: def summe(*zahlen): return sum(zahlen).');
+
+INSERT INTO python (id, term, definition, beginner_explanation)
+VALUES (46, 'Namensbereiche (Scopes)', 'Lokale Variablen gelten nur innerhalb einer Funktion, globale Variablen sind während der gesamten Programmlaufzeit verfügbar.', 'Namensbereiche bestimmen, wo Variablen verfügbar sind. Lokale Variablen sind nur innerhalb von Funktionen sichtbar, globale Variablen überall im Programm.');
+
+INSERT INTO python (id, term, definition, beginner_explanation)
+VALUES (47, 'String-Formatierung mit F-Strings', 'Ermöglicht es, Variablen und Ausdrücke direkt in einen String einzubetten.', 'F-Strings ermöglichen es dir, Variablen und Ausdrücke direkt in einen String einzufügen. Beispiel: name = ''Welt''; f''Hallo, {name}!''.');
+
+INSERT INTO python (id, term, definition, beginner_explanation)
+VALUES (48, 'Listen', 'Veränderliche Datenstrukturen, in denen mehrere Werte gespeichert werden können.', 'Listen sind veränderliche Datenstrukturen, die mehrere Werte speichern können. Beispiel: zahlen = [1, 2, 3, 4].');
+
+INSERT INTO python (id, term, definition, beginner_explanation)
+VALUES (49, 'append()', 'Fügt ein neues Element ans Ende der Liste hinzu.', 'Die Methode append() fügt ein neues Element am Ende einer Liste hinzu. Beispiel: zahlen.append(5).');
+
+INSERT INTO python (id, term, definition, beginner_explanation)
+VALUES (50, 'insert()', 'Fügt ein neues Element an einer bestimmten Position ein.', 'Die Methode insert() fügt ein neues Element an einer bestimmten Position in einer Liste ein. Beispiel: zahlen.insert(0, 5).');
+
+INSERT INTO python (id, term, definition, beginner_explanation)
+VALUES (51, 'pop()', 'Entfernt das letzte Element und gibt es zurück.', 'Die Methode pop() entfernt das letzte Element einer Liste und gibt es zurück. Beispiel: letztes_element = zahlen.pop().');
+
+INSERT INTO python (id, term, definition, beginner_explanation)
+VALUES (52, 'remove()', 'Entfernt das erste Vorkommen eines bestimmten Wertes.', 'Die Methode remove() entfernt das erste Vorkommen eines bestimmten Wertes aus einer Liste. Beispiel: zahlen.remove(3).');
+
+INSERT INTO python (id, term, definition, beginner_explanation)
+VALUES (53, 'del', 'Löscht ein Element an einem bestimmten Index.', 'Mit del kannst du ein Element an einem bestimmten Index aus einer Liste löschen. Beispiel: del zahlen[0].');
+
+INSERT INTO python (id, term, definition, beginner_explanation)
+VALUES (54, 'index()', 'Sucht den Index des ersten Vorkommens eines Wertes.', 'Die Methode index() gibt den Index des ersten Vorkommens eines Wertes in einer Liste zurück. Beispiel: index = zahlen.index(2).');
+
+INSERT INTO python (id, term, definition, beginner_explanation)
+VALUES (55, 'extend()', 'Hängt ein iterierbares Objekt an eine bestehende Liste an.', 'Die Methode extend() fügt die Elemente eines iterierbaren Objekts (wie einer Liste) an eine bestehende Liste an. Beispiel: zahlen.extend([5, 6]).');
+
+INSERT INTO python (id, term, definition, beginner_explanation)
+VALUES (56, 'reverse()', 'Kehrt die Reihenfolge der Elemente in-place um.', 'Die Methode reverse() kehrt die Reihenfolge der Elemente in einer Liste um. Beispiel: zahlen.reverse().');
+
+INSERT INTO python (id, term, definition, beginner_explanation)
+VALUES (57, 'sort()', 'Sortiert die Elemente der Liste.', 'Die Methode sort() sortiert die Elemente einer Liste. Beispiel: zahlen.sort().');
+
+INSERT INTO python (id, term, definition, beginner_explanation)
+VALUES (58, 'sum()-Funktion', 'Addiert alle Elemente eines iterierbaren Objekts.', 'Die sum()-Funktion addiert alle Elemente eines iterierbaren Objekts (wie einer Liste). Beispiel: total = sum(zahlen).');
+
+INSERT INTO python (id, term, definition, beginner_explanation)
+VALUES (59, 'Tupel', 'Unveränderliche Datenstrukturen, ähnlich wie Listen.', 'Tupel sind unveränderliche Datenstrukturen, die mehrere Werte speichern können. Beispiel: tupel = (1, 2, 3).');
+
+INSERT INTO python (id, term, definition, beginner_explanation)
+VALUES (60, 'List Slicing', 'Extrahiert gezielt Teile einer Liste.', 'List Slicing ermöglicht es dir, gezielt Teile einer Liste zu extrahieren. Beispiel: teil_liste = zahlen[1:3].');
+
+INSERT INTO python (id, term, definition, beginner_explanation)
+VALUES (61, 'List Comprehensions', 'Kompakte Möglichkeit, Listen zu erstellen.', 'List Comprehensions bieten eine kompakte Möglichkeit, Listen zu erstellen. Beispiel: quadrate = [i**2 for i in range(5)].');
+
+INSERT INTO python (id, term, definition, beginner_explanation)
+VALUES (62, 'Dictionaries', 'Sammlungen von Key-Value-Paaren.', 'Dictionaries sind Sammlungen von Key-Value-Paaren, die einen schnellen Zugriff auf Werte ermöglichen. Beispiel: telefonbuch = {''Alice'': ''1234'', ''Bob'': ''5678''}.');
+
+INSERT INTO python (id, term, definition, beginner_explanation)
+VALUES (63, 'Klassen und Objekte', 'Eine Klasse ist ein Bauplan, der festlegt, wie ein Objekt auszusehen hat.', 'Klassen sind Baupläne für Objekte. Sie definieren Eigenschaften und Methoden, die die Objekte haben. Beispiel: class Auto: pass.');
+
+INSERT INTO python (id, term, definition, beginner_explanation)
+VALUES (64, 'Parameter ''self''', 'Referenz des ausführenden Objekts zurückliefern.', 'Der Parameter ''self'' wird verwendet, um auf das aktuelle Objekt in einer Klassenmethode zuzugreifen. Beispiel: class Auto: def __init__(self, marke): self.marke = marke.');
+
+INSERT INTO python (id, term, definition, beginner_explanation)
+VALUES (65, 'Methode in Klasse', 'Funktion, die innerhalb einer Klasse definiert wird und sich auf Objekte dieser Klasse bezieht.', 'Eine Methode ist eine Funktion, die innerhalb einer Klasse definiert wird und auf Objekte dieser Klasse zugreift. Beispiel: class Auto: def fahren(self): print(''Das Auto fährt'').');
+
+INSERT INTO python (id, term, definition, beginner_explanation)
+VALUES (66, 'Module', 'Aufteilung eines Programms in mehrere Dateien für bessere Übersicht und Teamarbeit.', 'Module ermöglichen es dir, dein Programm in mehrere Dateien aufzuteilen, um die Übersicht zu verbessern und die Zusammenarbeit zu erleichtern.');
+
+INSERT INTO python (id, term, definition, beginner_explanation)
+VALUES (67, 'Built-in Module', 'In Python integrierte Module, die viele nützliche Funktionen bieten.', 'Built-in Module sind in Python integrierte Module, die viele nützliche Funktionen bieten. Beispiel: Das math-Modul bietet mathematische Funktionen.');
+
+INSERT INTO python (id, term, definition, beginner_explanation)
+VALUES (68, 'Modul als ausführbare Datei', 'Jede Python-Datei kann als Modul und auch als eigenständiges Programm verwendet werden.', 'Jede Python-Datei kann sowohl als Modul importiert als auch als eigenständiges Programm ausgeführt werden.');
+
+INSERT INTO python (id, term, definition, beginner_explanation)
+VALUES (69, 'Wurzelziehen', 'Die Quadratwurzel eines Wertes kann über Potenzierung mit 0,5 berechnet werden.', 'Um die Quadratwurzel einer Zahl zu berechnen, kannst du sie mit 0,5 potenzieren. Beispiel: 9 ** 0.5 ergibt 3.');
+</sql><current_tab id="0"/></tab_sql></sqlb_project>

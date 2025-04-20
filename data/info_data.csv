@@ -1,0 +1,174 @@
+ID,abbreviation,definition
+1,API,Application Programming Interface
+2,ASCII,American Standard Code for Information Interchange
+3,BIOS,Basic Input Output System
+4,CPU,Central Processing Unit
+5,CSS,Cascading Style Sheets
+6,DNS,Domain Name System
+7,DSL,Digital Subscriber Line
+8,DMA,Direct Memory Access
+9,DOS,Disk Operating System
+10,ERP,Enterprise Resource Planning
+11,FAQ,Frequently Asked Questions
+12,FTP,File Transfer Protocol
+13,GPU,Graphics Processing Unit
+14,GUI,Graphical User Interface
+15,HTML,HyperText Markup Language
+16,HTTP,HyperText Transfer Protocol
+17,HTTPS,HyperText Transfer Protocol Secure
+18,IaaS,Infrastructure as a Service
+19,ICMP,Internet Control Message Protocol
+20,IDE,Integrated Development Environment
+21,IoT,Internet of Things
+22,IP,Internet Protocol
+23,IPS,Intrusion Prevention System
+24,ISP,Internet Service Provider
+25,ITIL,Information Technology Infrastructure Library
+26,JSON,JavaScript Object Notation
+27,LAN,Local Area Network
+28,LDAP,Lightweight Directory Access Protocol
+29,MAC,Media Access Control
+30,MIME,Multipurpose Internet Mail Extensions
+31,NAS,Network Attached Storage
+32,NAT,Network Address Translation
+33,NDA,Non Disclosure Agreement
+34,OCR,Optical Character Recognition
+35,OOP,Object Oriented Programming
+36,OS,Operating System
+37,OTA,Over The Air
+38,PaaS,Platform as a Service
+39,PCI,Peripheral Component Interconnect
+40,PHP,PHP Hypertext Preprocessor
+41,QA,Quality Assurance
+42,QoS,Quality of Service
+43,RAID,Redundant Array of Independent Disks
+44,RDP,Remote Desktop Protocol
+45,RFID,Radio Frequency Identification
+46,ROM,Read Only Memory
+47,SaaS,Software as a Service
+48,SAN,Storage Area Network
+49,SCADA,Supervisory Control And Data Acquisition
+50,SDK,Software Development Kit
+51,SIEM,Security Information And Event Management
+52,SFTP,Secure File Transfer Protocol
+53,SMTP,Simple Mail Transfer Protocol
+54,SNMP,Simple Network Management Protocol
+55,SQL,Structured Query Language
+56,SSH,Secure Shell
+57,SSL,Secure Sockets Layer
+58,SSD,Solid State Drive
+59,TCP,Transmission Control Protocol
+60,TDD,Test Driven Development
+61,UDP,User Datagram Protocol
+62,UI,User Interface
+63,UEFI,Unified Extensible Firmware Interface
+64,UML,Unified Modeling Language
+65,URL,Uniform Resource Locator
+66,USB,Universal Serial Bus
+67,UX,User Experience
+68,VPN,Virtual Private Network
+69,VNC,Virtual Network Computing
+70,VoIP,Voice over Internet Protocol
+71,WAN,Wide Area Network
+72,WAP,Wireless Access Point
+73,WiFi,Wireless Fidelity
+74,WYSIWYG,What You See Is What You Get
+75,XML,eXtensible Markup Language
+76,XSS,Cross Site Scripting
+77,AI,Artificial Intelligence
+78,ML,Machine Learning
+79,DL,Deep Learning
+80,NLP,Natural Language Processing
+81,IoC,Inversion of Control
+82,MVP,Minimum Viable Product
+83,DevOps,Development And Operations
+84,CI,Continuous Integration
+85,CD,Continuous Deployment
+86,CRM,Customer Relationship Management
+87,BPM,Business Process Management
+88,BYOD,Bring Your Own Device
+89,DDoS,Distributed Denial Of Service
+90,DTO,Data Transfer Object
+91,ETL,Extract Transform Load
+92,GIS,Geographic Information System
+93,IaC,Infrastructure As Code
+94,LTS,Long Term Support
+95,MDM,Mobile Device Management
+96,ODBC,Open Database Connectivity
+97,RPA,Robotic Process Automation
+98,SEO,Search Engine Optimization
+99,SSO,Single Sign On
+100,TLD,Top Level Domain
+101,AES,Advanced Encryption Standard
+102,ANSI,American National Standards Institute
+103,ARP,Address Resolution Protocol
+104,ASLR,Address Space Layout Randomization
+105,BCP,Business Continuity Plan
+106,BCM,Business Continuity Management
+107,BMC,Baseboard Management Controller
+108,CAD,Computer Aided Design
+109,CAM,Computer Aided Manufacturing
+110,CDN,Content Delivery Network
+111,COTS,Commercial Off The Shelf
+112,CIAM,Customer Identity And Access Management
+113,CMDB,Configuration Management Database
+114,COBOL,Common Business Oriented Language
+115,CSRF,Cross Site Request Forgery
+116,CTI,Computer Telephony Integration
+117,DHCP,Dynamic Host Configuration Protocol
+118,DI,Dependency Injection
+119,DMZ,Demilitarized Zone
+120,DRM,Digital Rights Management
+121,DSP,Digital Signal Processing
+122,DVCS,Distributed Version Control System
+123,EDI,Electronic Data Interchange
+124,ECM,Enterprise Content Management
+125,EDR,Endpoint Detection And Response
+126,EFS,Encrypted File System
+127,ELK,Elasticsearch Logstash Kibana
+128,EMR,Elastic Map Reduce
+129,FOSS,Free And Open Source Software
+130,FUD,Fear Uncertainty And Doubt
+131,GDPR,General Data Protection Regulation
+132,GRC,Governance Risk And Compliance
+133,HCI,Human Computer Interaction
+134,HPC,High Performance Computing
+135,HTTP2,Hyper Text Transfer Protocol 2
+136,IAM,Identity And Access Management
+137,IANA,Internet Assigned Numbers Authority
+138,IETF,Internet Engineering Task Force
+139,IDS,Intrusion Detection System
+140,ITSM,IT Service Management
+141,IVR,Interactive Voice Response
+142,JBOD,Just A Bunch Of Disks
+143,JVM,Java Virtual Machine
+144,KPI,Key Performance Indicator
+145,LAMP,Linux Apache MySQL PHP
+146,LCMS,Learning Content Management System
+147,MIMO,Multiple Input Multiple Output
+148,NOC,Network Operations Center
+149,PIM,Product Information Management
+150,PCB,Printed Circuit Board
+151,PEM,Privacy Enhanced Mail
+152,PGP,Pretty Good Privacy
+153,PLC,Programmable Logic Controller
+154,POS,Point Of Sale
+155,QBR,Quarterly Business Review
+156,RFI,Request For Information
+157,RFP,Request For Proposal
+158,RMI,Remote Method Invocation
+159,SOA,Service Oriented Architecture
+160,SPI,Serial Peripheral Interface
+161,SPAM,Unsolicited Email
+162,SVN,Subversion
+163,TCO,Total Cost Of Ownership
+164,UTM,Unified Threat Management
+165,VDI,Virtual Desktop Infrastructure
+166,VHD,Virtual Hard Disk
+167,VM,Virtual Machine
+168,VDSL,Very High Bit Rate Digital Subscriber Line
+169,VNF,Virtual Network Function
+170,WAF,Web Application Firewall
+171,XaaS,Anything As A Service
+172,XMPP,Extensible Messaging And Presence Protocol
+173,XDR,Extended Detection And Response
