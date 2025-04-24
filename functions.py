@@ -27,7 +27,11 @@ class Randomizer:
             read_infos = list(csv.reader(csvfile))
             data_count = len(read_infos) -1
 
-            random_range = range(1, data_count)
+            if data_count < 3:
+                data_func = DataToFile
+                data_func.load_data(self, table="base")
+
+            random_range = range(0, data_count)
             random_number = sample(random_range, 3)
 
             term = read_infos[random_number[0]][1]

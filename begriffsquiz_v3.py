@@ -122,7 +122,7 @@ class MainWindow(tk.Tk):
         super().__init__(*args, **kwargs)
 
         self.style = LabelStyle()
-        self.current_table = None
+        self.current_table = "base"
         self.current_container = None
 
         self.title("Pat's Quiz")
@@ -133,6 +133,7 @@ class MainWindow(tk.Tk):
 
         self.frames = {}
         self.data_to_file = func.DataToFile()
+        self.data_to_file.load_data(self.current_table)
         self.read_data = func.Randomizer()
 
         main_window = MainFrame(self, self)
