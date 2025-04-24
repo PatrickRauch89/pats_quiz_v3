@@ -1,6 +1,6 @@
 import sqlite3
 import csv
-from random import randint, shuffle
+from random import shuffle, sample
 
 
 class DataToFile:
@@ -27,56 +27,108 @@ class Randomizer:
             read_infos = list(csv.reader(csvfile))
             data_count = len(read_infos) -1
 
-            rnd = randint(1, data_count)
-            term = read_infos[rnd][1]
-            answer1 = read_infos[rnd][2]
+            random_range = range(1, data_count)
+            random_number = sample(random_range, 3)
+
+            term = read_infos[random_number[0]][1]
+            answer1 = read_infos[random_number[0]][2]
 
             self.table = table
             if self.table == "python":
-                explanation = read_infos[rnd][3]
+                explanation = read_infos[random_number[0]][3]
             else:
                 explanation = ""
 
-            answer2 = read_infos[randint(1, data_count)][2]
-            answer3 = read_infos[randint(1, data_count)][2]
+            answer2 = read_infos[random_number[1]][2]
+            answer3 = read_infos[random_number[2]][2]
 
             answers = [answer1, answer2, answer3]
             shuffle(answers)
 
-            
-
             return term, answers, answer1, explanation
-
 
 
 class Highscore:
     def __init__(self, path="data/info_score.csv"):
-        pass
+        self.path = path
+
+        self.basic_score = 0
+        self.python_score = 0
+        self.eng_base_score = 0
+        self.eng_voc_score = 0
+        self.abbreviation_score = 0
+        try:
+            self.read_score()
+        except Exception:
+            pass
 
     def read_score(self):
         with open('data/info_score.csv', 'r', newline='', encoding='utf-8') as csvscore:
-            read_score = list(csv.reader(csvscore))
+            reader = csv.reader(csvscore)
+            row = next(reader, None)
+            
+            if row is None:
+                return self.basic_score, self.python_score, self.eng_base_score, self.eng_voc_score, self.abbreviation_score
 
-            self.basic_score = read_score[0][0]
-            self.python_score = read_score[0][1]
-            self.eng_base_score = read_score[0][2]
-            self.eng_voc_score = read_score[0][3]
-            self.abbreviation_score = read_score[0][4]
+            self.basic_score       = int(row[0])
+            self.python_score      = int(row[1])
+            self.eng_base_score    = int(row[2])
+            self.eng_voc_score     = int(row[3])
+            self.abbreviation_score= int(row[4])
+            
+        return self.basic_score, self.python_score, self.eng_base_score, self.eng_voc_score, self.abbreviation_score
     
     def write_score(self):
         highscore = [self.basic_score, self.python_score, self.eng_base_score, self.eng_voc_score, self.abbreviation_score]
         with open('data/info_score.csv', 'w', newline='', encoding='utf-8') as csvscore:
             writer = csv.writer(csvscore)
-            writer.writerows(highscore)
+            writer.writerow(highscore)
 
     def change_score_plus(self, table):
         if table == "base":
             self.basic_score += 5
-            self.write_score()
+        elif table == "python":
+            self.python_score += 5
+        elif table == "english_hardware":
+            self.eng_base_score += 5
+        elif table == "english_voc":
+            self.eng_voc_score += 5
+        elif table == "abbreviation":
+            self.abbreviation_score += 5
+        else:
+            print("Error 4122")
+            
+        self.write_score()
     
 
     def change_score_minus(self, table):
         if table == "base":
-            self.basic_score += 3
-            self.write_score()
+            if self.basic_score <= 3:
+                self.basic_score = 0
+            else:
+                self.basic_score -= 3
+        elif table == "python":
+            if self.python_score <= 3:
+                self.python_score = 0
+            else:
+                self.python_score -= 3
+        elif table == "english_hardware":
+            if self.eng_base_score <= 3:
+                self.eng_base_score = 0
+            else:
+                self.eng_base_score -= 3
+        elif table == "english_voc":
+            if self.eng_voc_score <= 3:
+                self.eng_voc_score = 0
+            else:
+                self.eng_voc_score -= 3
+        elif table == "abbreviation":
+            if self.abbreviation_score <= 3:
+                self.abbreviation_score = 0
+            else:
+                self.abbreviation_score -= 3
+        else:
+            print("Error 4123")
+
+        self.write_score()
             
